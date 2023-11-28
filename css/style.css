@@ -1,0 +1,110 @@
+/* COLOURS */
+
+:root{
+    --FONTCOLOUR: rgba(245, 245, 245, 0.868);
+    --BORDERCOLOUR: black;
+}
+
+/* RESET */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* CONTAINER */
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+/* VIDEO BACKGROUND */
+
+.video-background{
+    position: fixed;
+    overflow: hidden;
+    z-index: -1;
+    object-fit: cover;
+}
+
+/* HEADER */
+
+header{
+    display: flex;
+    width: 100%;
+    background-color: transparent;
+    margin-top: 50px;
+}
+
+nav{
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    margin-right: 100px;
+    gap: 6rem;
+}
+
+h2{
+    text-transform: uppercase;
+    font-family: introfont;
+    font-style: italic;
+    font-size: 40px;
+    margin-left: 40px;
+    color: var(--FONTCOLOUR);
+}
+
+a{
+    color: var(--FONTCOLOUR);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+/* MAIN */
+
+main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 90vh;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    font-size: 90px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--FONTCOLOUR);
+}
+
+button{
+    margin-top: 3rem;
+    width: 200px;
+    height: 70px;
+    border-radius: 60px;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    background-color: var(--FONTCOLOUR);
+    border: 1px solid var(--BORDERCOLOUR);
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: white;
+}
+
+
+/* FONTS */
+
+@font-face {
+    font-family: introfont;
+    src: url(/Fonts/Super\ Nought\ Personal\ Use.ttf);
+}
